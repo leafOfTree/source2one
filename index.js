@@ -7,7 +7,6 @@ main();
 
 function main() {
     var argObj = parseArgs();
-    console.log(argObj)
     var sourceDir = argObj.sourceDir;
     var ignoreFiles = argObj.i;
 
