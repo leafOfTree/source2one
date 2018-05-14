@@ -24,7 +24,7 @@ test/plugin/plugin.js:
     plugin content
     plugin content2
 
-test.source.md: 
+After running `source2one test`, output test.source.md: 
 
     # test
     generated at 2018-5-14 12:48:17
