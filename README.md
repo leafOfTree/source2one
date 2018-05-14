@@ -21,8 +21,8 @@ test/core/core.js:
 
 test/plugin/plugin.js: 
 
-
     plugin content
+    plugin content2
 
 test.source.md: 
 
@@ -33,7 +33,7 @@ test.source.md:
     
     &#x20DE; test/core/core.js (lines: 1)
     
-    &#x20DE; test/plugins/plugin.js (lines: 1)
+    &#x20DE; test/plugins/plugin.js (lines: 2)
     
     ## Content
     
@@ -42,8 +42,9 @@ test.source.md:
     core content
     ```
     
-    test/plugins/plugin.js (lines: 1)
+    test/plugins/plugin.js (lines: 2)
     ```
     plugin content
+    plugin content2
     ```
 
