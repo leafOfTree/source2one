@@ -1,0 +1,14 @@
+{
+  "name": "source2one",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "source2one": "index.js"  
+  }, 
+  "author": "",
+  "license": "ISC"
+}
