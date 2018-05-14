@@ -1,6 +1,6 @@
 {
   "name": "source2one",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -11,8 +11,8 @@
     "url": "git+https://github.com/leafOfTree/source2one.git"
   },
   "bin": {
-    "source2one": "index.js"  
-  }, 
+    "source2one": "index.js"
+  },
   "author": "",
   "license": "ISC"
 }
