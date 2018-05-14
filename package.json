@@ -14,5 +14,10 @@
     "source2one": "index.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "keywords": [
+    "source-code",
+    "read",
+    "print"
+  ]
 }
