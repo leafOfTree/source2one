@@ -4,14 +4,21 @@
 
 Convert all source code to one markdown file, useful to print and read.
 
+## Usage
+
+    // generate src.source.md, ignore __test__
+    source2one src -i __test__
+
 ## Install
 
     npm install source2one -g
 
-## Usage
+## Options
 
-    source2one src
-    // generate src.source.md
+**-i**: ignore files, seprated by `,`
+
+    source2one src -i *.md,__test__
+    
 
 ## Example
 
