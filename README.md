@@ -6,7 +6,7 @@ Convert all source code to one markdown file, useful to print and read.
 
 ## Usage
 
-    // generate src.source.md, ignore __test__
+    // generate files in folder "src" to src.source.md, ignore __test__
     source2one src -i __test__
 
 ## Install
