@@ -6,7 +6,7 @@ Convert all source code to one markdown file, useful to print and read.
 
 ## Usage
 
-    // generate src.source.md, ignore __test__
+    // generate files in folder "src" to src.source.md, ignore __test__
     source2one src -i __test__
 
 ## Install
@@ -19,6 +19,11 @@ Convert all source code to one markdown file, useful to print and read.
 
     source2one src -i *.md,__test__
     
+## To html/pdf
+
+[pandoc](https://github.com/jgm/pandoc): markdown to html 
+
+[wkhtmltopdf](wkhtmltopdf): html to pdf
 
 ## Example
 
