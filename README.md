@@ -43,9 +43,9 @@ After running `source2one test`, output test.source.md:
     
     ## TOC
     
-    &#x20DE; test/core/core.js (lines: 1)
+    ⃞ test/core/core.js (lines: 1)
     
-    &#x20DE; test/plugins/plugin.js (lines: 2)
+    ⃞ test/plugins/plugin.js (lines: 2)
     
     ## Content
     
