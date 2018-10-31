@@ -13,7 +13,7 @@ function main() {
 
   if (showHelp) {
     console.log(`Usage: source2one target [-i ignored_file1,ignored_file2...]`)
-  } else (!sourceDir) {
+  } else if (!sourceDir) {
     console.log('Source dir is required');
   } else {
     var targetFile = `${sourceDir.replace(/(\\|\/)/g, '_')}.source.md`;
