@@ -8,11 +8,11 @@ main();
 function main() {
   var argObj = parseArgs();
   var sourceDir = argObj.sourceDir;
-  var ignoreFiles = argObj.i;
-  var showHelp = argObj.h || argObj.help;
+  var ignoreFiles = argObj['-i'];
+  var showHelp = argObj['-h'] || argObj['--help'];
 
   if (showHelp) {
-    console.log(`Usage: source2one target [-i ignored_file1,ignored_file2...]`)
+    console.log(`Usage: source2one target [-i ignored_file1,ignored_file2,...]`)
   } else if (!sourceDir) {
     console.log('Source dir is required');
   } else {
@@ -41,17 +41,20 @@ function parseArgs() {
   var args = process.argv.slice(2);
   var argObj = {};
   for (var i = 0 ; i < args.length; i++) {
-    ['i', 'h', 'help'].forEach(function (opt) {
-      if ((args[i] === ('-' + opt) || args[i] === ('--' + opt)) 
-        && args[i + 1]) {
-        argObj[opt] = args[i + 1];
-        args[i] = args[i + 1] = null;
-        i++;
-      } else if (args[i].match(/-.*/)) {
-        console.log('Error! Unsupported option: ' + args[i])
-        process.exit(1)
-      }
-    })
+    var arg = args[i];
+    if (['-i'].indexOf(arg) !== -1) {
+      argObj[arg] = args[i + 1];
+      args[i] = args[i + 1] = null;
+    }
+    if (['-h', '--help'].indexOf(arg) !== -1) {
+      argObj[arg] = true;
+      args[i] = null;
+    }
+    i++;
+    if (!argObj[arg]) {
+      console.log('Error! Unsupported option: ' + args[i])
+      process.exit(1)
+    }
   }
   args.forEach(function (arg) {
     if (arg) {
