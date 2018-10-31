@@ -51,7 +51,7 @@ function parseArgs() {
       args[i] = null;
     }
     i++;
-    if (!argObj[arg]) {
+    if (!argObj[arg] && arg.indexOf('-') !== -1) {
       console.log('Error! Unsupported option: ' + args[i])
       process.exit(1)
     }
