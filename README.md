@@ -6,7 +6,7 @@ Convert all source code to one markdown file, useful to print and read.
 
 ## Usage
 
-    // generate files in folder "src" to src.source.md, ignore __test__
+    // generate files in folder "src" to "src.source.md", ignore __test__
     source2one src -i __test__
 
 ## Install
@@ -36,7 +36,7 @@ test/plugin/plugin.js:
     plugin content
     plugin content2
 
-After running `source2one test`, output test.source.md: 
+After running `source2one test`, output `test.source.md`: 
 
     # test
     generated at 2018-5-14 12:48:17
