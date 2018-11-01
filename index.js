@@ -19,7 +19,7 @@ function main() {
     var targetFile = `${sourceDir.replace(/(\\|\/)/g, '_')}.source.md`;
     var tocConfig = {
       sourceDir,
-      ignoreFiles, 
+      ignoreFiles,
       targetFile,
       title: '## TOC\n',
       contentTitle: '\n## Content\n',
@@ -36,6 +36,7 @@ function main() {
 /**
  * -i: ignore
  * -h: help
+ * --help: help
  */
 function parseArgs() {
   var args = process.argv.slice(2);
