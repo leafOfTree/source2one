@@ -23,7 +23,7 @@ Convert all source code to one markdown file, useful to print and read.
 
 [pandoc](https://github.com/jgm/pandoc): markdown to html 
 
-[wkhtmltopdf](wkhtmltopdf): html to pdf
+[wkhtmltopdf](https://wkhtmltopdf.org/): html to pdf
 
 ## Example
 
