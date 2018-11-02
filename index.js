@@ -12,7 +12,12 @@ function main() {
   var showHelp = argObj['-h'] || argObj['--help'];
 
   if (showHelp) {
-    console.log(`Usage: source2one target [-i ignored_file1,ignored_file2,...]`)
+    console.log(`
+    Usage: source2one target [-i ignored_file1,ignored_file2,...]
+
+    -i: ignore files, seprated by `,`
+    -h, --help: show help info
+    `)
   } else if (!sourceDir) {
     console.log('Source dir is required');
   } else {

@@ -18,6 +18,8 @@ Convert all source code to one markdown file, useful to print and read.
 **-i**: ignore files, seprated by `,`
 
     source2one src -i *.md,__test__
+
+-h, --help: show help info
     
 ## To html/pdf
 
